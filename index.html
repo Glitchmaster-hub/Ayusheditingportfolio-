@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kanojia — Video Editor & GenAI Artist</title>
+    <meta name="description" content="Premium advertising video editor and GenAI artist specializing in fashion, product, and cinematic campaigns. I shape brand visual identities from concept to final film.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Ayush Kanojia — Video Editor & GenAI Artist">
+    <meta property="og:description" content="Cinematic advertising campaigns, visual identity curation, and GenAI production.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Font Pairings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Tactile Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- Contextual Intelligent Desktop Cursor -->
+    <div class="custom-cursor" id="customCursor"><span class="cursor-text"></span></div>
+
+    <!-- Transparent Cinematic Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-target="home">AYUSH KANOJIA</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#work" class="nav-item" data-target="work">WORK</a>
+                <a href="#about" class="nav-item" data-target="about">ABOUT</a>
+                <a href="#services" class="nav-item" data-target="services">SERVICES</a>
+                <a href="#assets" class="nav-item" data-target="assets">ASSETS</a>
+                <a href="#contact" class="nav-item contact-nav-btn" data-target="contact">HIRE ME →</a>
+                
+                <!-- Watch Intro Floating Element Target -->
+                <button class="watch-intro-btn" id="navIntroTrigger">
+                    <span class="play-icon">▲</span> WATCH MY INTRO
+                </button>
+            </div>
+        </div>
+        
+        <!-- Dropdown Intro Player Drawer (Saves Hero Screen Space) -->
+        <div class="nav-intro-drawer" id="introDrawer">
+            <div class="drawer-container">
+                <button class="close-drawer" id="closeDrawerBtn">✕ CLOSE</button>
+                <div class="drawer-video-wrapper">
+                    <video id="introVideo" preload="none" playsinline controls>
+                        <source src="assets/showreel.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CORE ROUTER WORKSPACE -->
+    <main id="main-content">
+
+        <!-- ========================================== -->
+        <!-- HOMEPAGE SUB-VIEW                          -->
+        <!-- ========================================== -->
+        <section id="view-home" class="page-view active">
+            
+            <!-- Hero Layout -->
+            <header class="hero-section">
+                <div class="hero-bg" style="background-image: linear-gradient(rgba(23,23,23,0.4), rgba(23,23,23,0.75)), url('assets/hero.jpg');"></div>
+                <div class="hero-content scroll-reveal">
+                    <span class="hero-tagline">ADVERTISING • VISUAL STORYTELLING • GENAI</span>
+                    <h1 class="hero-title">I SEE IT.<br>I VISUALIZE IT.<br>I TURN IT INTO A FILM.</h1>
+                    <p class="hero-bio-summary">Ayush Kanojia — Video Editor & GenAI Artist. I look at a brand or raw concept and determine how to present it visually to maximize market desire.</p>
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary data-nav" data-target="work">VIEW WORK →</a>
+                        <a href="#contact" class="btn btn-secondary data-nav" data-target="contact">HIRE ME →</a>
+                    </div>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <span>SCROLL TO EXPLORE</span>
+                    <span class="arrow">↓</span>
+                </div>
+            </header>
+
+            <!-- Creative Framework Logic Statement -->
+            <section class="philosophy-strip scroll-reveal">
+                <div class="section-container">
+                    <p class="editorial-statement">
+                        "A product can be good. The way it is presented changes how people perceive it."
+                    </p>
+                    <div class="framework-stages-grid">
+                        <div class="stage-card">
+                            <span class="stage-index">01 / SEE</span>
+                            <h4>Understand</h4>
+                            <p>Deconstruct the brand, product utility, and target customer psychology deep down.</p>
+                        </div>
+                        <div class="stage-card">
+                            <span class="stage-index">02 / VISUALIZE</span>
+                            <h4>Determine</h4>
+                            <p>Map the precise mood, luxury thresholds, aesthetic pacing, and visual identity landscape.</p>
+                        </div>
+                        <div class="stage-card">
+                            <span class="stage-index">03 / CREATE</span>
+                            <h4>Generate</h4>
+                            <p>Produce cinematic visuals, bespoke art variations, and conceptual b-roll via modern GenAI models.</p>
+                        </div>
+                        <div class="stage-card">
+                            <span class="stage-index">04 / EDIT</span>
+                            <h4>Assemble</h4>
+                            <p>Splice components down into high-impact advertisements using rhythm, sonic scale, and editing purpose.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Selected Project Showcase Grid -->
+            <section class="selected-work-section scroll-reveal">
+                <div class="section-container">
+                    <div class="section-header-row">
+                        <div>
+                            <span class="section-label">SELECTED ARCHIVE</span>
+                            <h2 class="section-title">CREATIVE DIRECTION & EDITS</h2>
+                        </div>
+                        <a href="#work" class="editorial-link data-nav" data-target="work">EXPLORE FULL ARCHIVE →</a>
+                    </div>
+
+                    <div class="editorial-asymmetric-grid">
+                        <!-- Project 1: Soleil Streetwear (9:16 Frame Showcase) -->
+                        <div class="project-card format-vertical cursor-viewable" data-slug="soleil-streetwear">
+                            <div class="project-media-box">
+                                <img src="https://files.catbox.moe/5o8oeb.jpg" alt="Soleil Streetwear Campaign Preview" loading="lazy">
+                                <div class="aspect-badge">9:16 VERTICAL</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>SOLEIL STREETWEAR</h3>
+                                <div class="meta-row"><span>Fashion Advertisement</span><span class="dot"></span><span>2026</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: High-End Product Ad (4:5 Frame Showcase) -->
+                        <div class="project-card format-portrait cursor-viewable" data-slug="Party Drink">
+                            <div class="project-media-box">
+                                <img src="https://files.catbox.moe/1bkuzi.jpg" alt="Luxury Drink Campaign Preview" loading="lazy">
+                                <div class="aspect-badge">9:16 Vertical</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Saas Promo</h3>
+                                <div class="meta-row"><span>Tech Advertisement</span><span class="dot"></span><span>2026</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Cinematic Film Ad (16:9 Frame Showcase) -->
+                        <div class="project-card format-landscape cursor-viewable" data-slug="cinematic-promo">
+                            <div class="project-media-box">
+                                <mg src="assets/projects/project-02.jpg" alt="Cinematic Campaign Preview" loading="lazy">
+                                <div class="aspect-badge">9:16 Vertical</div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Party Drink</h3>
+                                <div class="meta-row"><span>Cinematic Brand Film</span><span class="dot"></span><span>2026</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Credibility Counter Metric Bar -->
+            <section class="metrics-strip scroll-reveal">
+                <div class="section-container metrics-flex-wrapper">
+                    <div class="metric-item">
+                        <span class="metric-number" data-count="3">0</span>
+                        <span class="metric-lbl">VERIFIED ACTIVE CLIENTS</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number" data-count="2">0</span>
+                        <span class="metric-lbl">REPEAT RETAINER CLIENTS</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-number" data-text="JAN 2025">0</span>
+                        <span class="metric-lbl">ESTABLISHED TIMELINE</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Client Visual Pitch Trigger Block -->
+            <section class="pitch-banner scroll-reveal">
+                <div class="section-container banner-inner">
+                    <span class="section-label">VISUAL POSITIONING</span>
+                    <h2>DON'T KNOW HOW YOUR BRAND SHOULD LOOK?</h2>
+                    <p class="pitch-highlight">"Give me the brand. I'll figure out how we should present it."</p>
+                    <div class="split-responsibility-matrix">
+                        <div class="matrix-col">
+                            <h5>YOU BRING:</h5>
+                            <p>Brand Assets • Product Focus • Rough Footage • Raw Vision</p>
+                        </div>
+                        <div class="matrix-col">
+                            <h5>I DELIVER:</h5>
+                            <p>Visual Strategy • Dynamic Editing • GenAI Content Layers • Advertising Pacing</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-accent data-nav" data-target="contact">LET'S FIGURE IT OUT →</a>
+                </div>
+            </section>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- ALL WORK ARCHIVE VIEW                      -->
+        <!-- ========================================== -->
+        <section id="view-work" class="page-view">
+            <div class="section-container internal-page-padding">
+                <span class="section-label">PORTFOLIO INDEX</span>
+                <h1 class="page-main-heading">ALL CAMPAIGNS</h1>
+
+                <!-- Dual Filtering System Stack -->
+                <div class="filter-controls-group">
+                    <div class="filter-row" id="categoryFilters">
+                        <span class="filter-lbl">CATEGORY:</span>
+                        <button class="filter-tab active" data-cat="all">ALL</button>
+                        <button class="filter-tab" data-cat="fashion">FASHION</button>
+                        <button class="filter-tab" data-cat="product">PRODUCT</button>
+                        <button class="filter-tab" data-cat="ugc">UGC</button>
+                        <button class="filter-tab" data-cat="cinematic">CINEMATIC</button>
+                        <button class="filter-tab" data-cat="ai">AI</button>
+                    </div>
+                    <div class="filter-row" id="techFilters">
+                        <span class="filter-lbl">ENGINE/TECH:</span>
+                        <button class="filter-tab active" data-tech="all">ALL TECH</button>
+                        <button class="filter-tab" data-tech="veo">VEO</button>
+                        <button class="filter-tab" data-tech="wan">WAN</button>
+                        <button class="filter-tab" data-tech="midjourney">MIDJOURNEY</button>
+                        <button class="filter-tab" data-tech="mobile">MOBILE EDITING</button>
+                    </div>
+                </div>
+
+                <!-- True-Aspect Grid Archive Container -->
+                <div class="archive-aspect-grid" id="archiveGrid">
+                    <!-- Soleil Streetwear -->
+                    <div class="project-card format-vertical cursor-viewable" data-categories="fashion" data-technologies="wan mobile">
+                        <div class="project-media-box" data-slug="soleil-streetwear">
+                            <img src="https://files.catbox.moe/5o8oeb.jpg" alt="Soleil Streetwear">
+                            <div class="aspect-badge">9:16 VERTICAL</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>SOLEIL STREETWEAR</h3>
+                            <div class="meta-row"><span>Fashion</span><span class="dot"></span><span>Gemini + ChatGPT + Capcut</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SaaS Promo -->
+                    <div class="project-card format-vertical cursor-viewable" data-categories="Tech product" data-technologies="midjourney mobile">
+                        <div class="project-media-box" data-slug="Saas Promo">
+                            <img src="https://files.catbox.moe/1bkuzi.jpg" alt="SaaS Promo">
+                            <div class="aspect-badge">9:16 Vertical</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Saas Promo</h3>
+                            <div class="meta-row"><span>Product</span><span class="dot"></span><span>Gemini + ChatGPT + Alight</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Party Drink -->
+                    <div class="project-card format-vertical cursor-viewable" data-categories="party" data-technologies="veo mobile">
+                        <div class="project-media-box" data-slug="food">
+                            <img src="https://files.catbox.moe/qvhv9w.png" alt="Party Drink">
+                            <div class="aspect-badge">9:16 VERTICAL</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Party Drink</h3>
+                            <div class="meta-row"><span>Cinematic</span><span class="dot"></span><span>Veo + Capcut</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Cyber Cosmetics -->
+                    <div class="project-card format-vertical cursor-viewable" data-categories="ai fashion" data-technologies="veo wan">
+                        <div class="project-media-box" data-slug="cyber cosmetic">
+                            <img src="assets/projects/project-04.jpg" alt="Cyber Cosmetics">
+                            <div class="aspect-badge">9:16 VERTICAL</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>CYBER COSMETICS</h3>
+                            <div class="meta-row"><span>AI Gen Ad</span><span class="dot"></span><span>Veo + Wan Loop</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Urban Kinetics UGC -->
+                    <div class="project-card format-portrait cursor-viewable" data-categories="ugc" data-technologies="mobile">
+                        <div class="project-media-box" data-slug="urban-ugc">
+                            <img src="assets/projects/project-05.jpg" alt="Urban Kinetics">
+                            <div class="aspect-badge">4:5 PORTRAIT</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>URBAN KINETICS</h3>
+                            <div class="meta-row"><span>UGC Ad Style</span><span class="dot"></span><span>CapCut Fast-Cut</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Minimalist Home Interior -->
+                    <div class="project-card format-landscape cursor-viewable" data-categories="product cinematic" data-technologies="midjourney mobile">
+                        <div class="project-media-box" data-slug="minimal-home">
+                            <img src="assets/projects/project-06.jpg" alt="Minimalist Space">
+                            <div class="aspect-badge">16:9 CINEMATIC</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>DOMUS LIVING</h3>
+                            <div class="meta-row"><span>Product Cinema</span><span class="dot"></span><span>Midjourney Assets</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- REUSABLE DYNAMIC CASE STUDY MODULE         -->
+        <!-- ========================================== -->
+        <section id="view-project-detail" class="page-view">
+            <div class="section-container internal-page-padding">
+                <a href="#work" class="back-link-btn data-nav" data-target="work">← BACK TO WORK INDEX</a>
+                
+                <header class="case-header">
+                    <h1 id="caseTitle" class="case-main-title">SOLEIL STREETWEAR</h1>
+                    <div class="case-scope-strip">
+                        <div class="scope-pill"><span class="lbl">CATEGORY:</span> <span id="caseCategory">Fashion Advertisement</span></div>
+                        <div class="scope-pill"><span class="lbl">YEAR:</span> <span id="caseYear">2025</span></div>
+                    </div>
+                </header>
+
+                <!-- Responsive Aspect Ratio Controlled Centerpiece Container -->
+                <div class="case-showcase-viewport" id="caseMediaFrame">
+                    <div class="case-native-media-holder" id="caseNativeWrapper">
+                        <!-- Content dynamically altered/embedded via Javascript -->
+                        <video id="caseMainVideo" controls preload="metadata" playsinline poster="assets/projects/project-01.jpg">
+                            <source src="assets/showreel.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="case-editorial-layout">
+                    <div class="case-sidebar-metrics">
+                        <div class="metric-block"><span class="lbl">STRATEGY</span><p>Concept → Final Ad</p></div>
+                        <div class="metric-block"><span class="lbl">ENGINES USED</span><p id="caseTools">Wan, CapCut, Lightroom</p></div>
+                    </div>
+                    <div class="case-narrative-content">
+                        <h4 class="editorial-subheading">THE BRIEF & CREATIVE DIRECTION</h4>
+                        <p id="caseBrief" class="case-para">Construct a rapid-paced visual campaign showcasing luxury streetwear identity across modern social distribution vectors.</p>
+                        
+                        <h4 class="editorial-subheading">VISUAL DEVELOPMENT & EDITING</h4>
+                        <p id="caseDevelopment" class="case-para">Utilized advanced GenAI assets upscaled in Lightroom paired with surgical timeline split-cuts in mobile engines to engineer retention metrics.</p>
+                    </div>
+                </div>
+
+                <!-- Before/After Interactive Comparison Component -->
+                <div class="comparison-block-wrapper" id="caseSliderSection">
+                    <h4 class="editorial-subheading component-title">VISUAL TRANSFORMATION (RAW AI GENERATION VS. FINAL AD SYSTEM)</h4>
+                    <div class="before-after-slider-box" id="baSliderContainer">
+                        <div class="image-layer layer-before">
+                            <img id="caseImgBefore" src="assets/projects/project-04.jpg" alt="Raw AI Generated Sequence Component">
+                            <div class="layer-tag">RAW AI GENERATED CONTENT</div>
+                        </div>
+                        <div class="image-layer layer-after">
+                            <img id="caseImgAfter" src="assets/projects/project-01.jpg" alt="Final Mobile Grade and Styled Ad Composition">
+                            <div class="layer-tag">FINAL COMPOSITED AD FRAME</div>
+                        </div>
+                        <div class="slider-handle-bar" id="sliderHandle">
+                            <div class="handle-thumb">⇹</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-pagination-bar">
+                    <button class="pag-trigger" id="casePrevBtn">← PREVIOUS PRODUCION</button>
+                    <button class="pag-trigger" id="caseNextBtn">NEXT PRODUCTION →</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SERVICES CAPABILITIES VIEW                 -->
+        <!-- ========================================== -->
+        <section id="view-services" class="page-view">
+            <div class="section-container internal-page-padding">
+                <span class="section-label">CAPABILITIES & SERVICE</span>
+                <h1 class="page-main-heading">WHAT I DO</h1>
+                <p class="section-intro-text">I deliver calculated advertising frameworks rather than simple sequence stitching. Here is how we can collaborate.</p>
+
+                <div class="services-tier-stack">
+                    <div class="tier-card">
+                        <div class="tier-meta">
+                            <span class="index">01</span>
+                            <h3>VIDEO EDITING</h3>
+                        </div>
+                        <p class="tier-desc">Surgical rhythm pacing, advanced soundscape layering, structural transitions, and targeted color corrections using CapCut, Alight Motion, and VN.</p>
+                    </div>
+                    
+                    <div class="tier-card">
+                        <div class="tier-meta">
+                            <span class="index">02</span>
+                            <h3>AI VISUALS</h3>
+                        </div>
+                        <p class="tier-desc">Bespoke generation of complex assets, cinematic b-roll variations, and abstract luxury visual templates calibrated via Veo, Wan, and Midjourney.</p>
+                    </div>
+
+                    <div class="tier-card">
+                        <div class="tier-meta">
+                            <span class="index">03</span>
+                            <h3>AI + EDITING</h3>
+                        </div>
+                        <p class="tier-desc">The complete hybrid solution. Seamlessly merging real product footage footprints with high-end generative graphics layers to scale retention loops.</p>
+                    </div>
+
+                    <div class="tier-card premium-tier">
+                        <div class="tier-meta">
+                            <span class="index">04</span>
+                            <h3>CONCEPT → FINAL AD</h3>
+                            <span class="premium-badge">PREMIUM SERVICE</span>
+                        </div>
+                        <p class="tier-desc">The total creative direction framework. Ideal for clients lacking fixed direction. I design the core mood, write hooks, generate b-roll, process color files, and assemble the final ad from scratch.</p>
+                    </div>
+                </div>
+
+                <div class="services-bottom-cta">
+                    <a href="#contact" class="btn btn-accent data-nav" data-target="contact">GET A CUSTOM QUOTE →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- EXTENDED ABOUT BIOGRAPHY VIEW              -->
+        <!-- ========================================== -->
+        <section id="view-about" class="page-view">
+            <div class="section-container internal-page-padding">
+                <span class="section-label">BIOGRAPHY</span>
+                <h1 class="page-main-heading">ABOUT AYUSH</h1>
+
+                <div class="about-biography-layout">
+                    <div class="bio-visual-side">
+                        <img src="assets/portrait.jpg" alt="Ayush Kanojia Portrait Frame">
+                    </div>
+                    <div class="bio-text-side">
+                        <p class="bio-emphasis">"I create because I love visuals and content, and I construct them like a movie."</p>
+                        <p class="bio-general-text">I have engineered a fast hybrid post-production asset layout over the past 1–1.5 years. By combining high-speed responsive mobile utility rigs (CapCut, Alight Motion, VN) with heavy baseline text-to-video creative models (Veo, Wan, Midjourney), I translate complex imagery out of mental spaces directly into commercial films.</p>
+                        
+                        <h4 class="tool-matrix-title">TECHNICAL ECOSYSTEM ARCHITECTURE</h4>
+                        <div class="tool-matrix-grid">
+                            <div class="tool-tag-group">
+                                <span class="group-label">GENERATIVE AI:</span>
+                                <div class="tags-flex"><span class="tag">Veo</span><span class="tag">Wan</span><span class="tag">Midjourney</span><span class="tag">Gemini</span><span class="tag">ChatGPT</span></div>
+                            </div>
+                            <div class="tool-tag-group">
+                                <span class="group-label">EDITING & GRADING:</span>
+                                <div class="tags-flex"><span class="tag">CapCut</span><span class="tag">Alight Motion</span><span class="tag">VN</span><span class="tag">Lightroom</span><span class="tag">Canva</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- PAID & FREE ASSETS STORE VIEW              -->
+        <!-- ========================================== -->
+        <section id="view-assets" class="page-view">
+            <div class="section-container internal-page-padding">
+                <span class="section-label">POST CREATIVE MARKETPLACE</span>
+                <h1 class="page-main-heading">EDITING ASSETS</h1>
+                <p class="section-intro-text">Bespoke color libraries, motion template presets, and generative workflow bundles built exclusively by Ayush Kanojia.</p>
+
+                <div class="assets-store-grid">
+                    <!-- Placeholder Asset Item 1 -->
+                    <div class="asset-product-card">
+                        <div class="asset-preview-box color-category">
+                            <span>LUT LUXE ADVERTISING</span>
+                        </div>
+                        <div class="asset-item-details">
+                            <span class="asset-badge-type premium">PAID</span>
+                            <h4>Cinematic Fashion Lightroom Presets</h4>
+                            <p class="asset-meta-text">Ecosystem Category: COLOR / LIGHTROOM</p>
+                            <button class="btn btn-secondary asset-buy-trigger">COMING SOON</button>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Asset Item 2 -->
+                    <div class="asset-product-card">
+                        <div class="asset-preview-box motion-category">
+                            <span>ALIGHT MOTION PACK</span>
+                        </div>
+                        <div class="asset-item-details">
+                            <span class="asset-badge-type free">FREE</span>
+                            <h4>Dynamic Advertising Transitions Engine</h4>
+                            <p class="asset-meta-text">Ecosystem Category: MOTION / ALIGHT MOTION</p>
+                            <button class="btn btn-secondary asset-buy-trigger">COMING SOON</button>
+                        </div>
+                    </div>
+
+                    <!-- Placeholder Asset Item 3 -->
+                    <div class="asset-product-card">
+                        <div class="asset-preview-box ai-category">
+                            <span>WAN PROMPT ARCHIVE</span>
+                        </div>
+                        <div class="asset-item-details">
+                            <span class="asset-badge-type premium">PAID</span>
+                            <h4>High-End Luxury Text-To-Video Guide</h4>
+                            <p class="asset-meta-text">Ecosystem Category: AI / WAN + VEO</p>
+                            <button class="btn btn-secondary asset-buy-trigger">COMING SOON</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- MULTI-STEP HIRE ME FLOW VIEW               -->
+        <!-- ========================================== -->
+        <section id="view-contact" class="page-view">
+            <div class="section-container internal-page-padding">
+                <span class="section-label">ENGAGEMENT ENGINE</span>
+                <h1 class="page-main-heading">LET'S MAKE<br>SOMETHING WORTH WATCHING.</h1>
+
+                <div class="multi-step-form-wrapper">
+                    <!-- Progress Bar Component -->
+                    <div class="form-progress-indicator">
+                        <div class="progress-track-bar"><div class="progress-fill-line" id="formProgressFill"></div></div>
+                        <div class="steps-labels">
+                            <span class="step-dot active">1</span>
+                            <span class="step-dot">2</span>
+                            <span class="step-dot">3</span>
+                            <span class="step-dot">4</span>
+                        </div>
+                    </div>
+
+                    <form id="multiStepInquiryForm" novalidate>
+                        
+                        <!-- STEP 1: Content Variant Designation -->
+                        <div class="form-step-pane active" data-step="1">
+                            <h3>Step 1: What type of campaign are we creating?</h3>
+                            <div class="options-selection-grid">
+                                <label class="selectable-box"><input type="radio" name="project_type" value="fashion" checked><span>Fashion / Lookbook Ad</span></label>
+                                <label class="selectable-box"><input type="radio" name="project_type" value="product"><span>Product Advertisement</span></label>
+                                <label class="selectable-box"><input type="radio" name="project_type" value="ugc"><span>UGC-Style Content</span></label>
+                                <label class="selectable-box"><input type="radio" name="project_type" value="cinematic"><span>Cinematic Ad Film</span></label>
+                                <label class="selectable-box"><input type="radio" name="project_type" value="ai"><span>AI-Generated Advertisement</span></label>
+                            </div>
+                            <div class="step-nav-buttons"><button type="button" class="btn btn-primary next-step-btn">CONTINUE →</button></div>
+                        </div>
+
+                        <!-- STEP 2: Current Asset Inventory Evaluation -->
+                        <div class="form-step-pane" data-step="2">
+                            <h3>Step 2: What visual assets do you currently have ready?</h3>
+                            <div class="options-selection-grid">
+                                <label class="selectable-box"><input type="checkbox" name="assets_had" value="footage"><span>Raw Captured Footage</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="assets_had" value="photos"><span>Product Photography</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="assets_had" value="brand_kits"><span>Brand Guidelines/Logo Assets</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="assets_had" value="concept"><span>Established Script/Concept</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="assets_had" value="nothing"><span>Nothing Yet (Blank Slate)</span></label>
+                            </div>
+                            <div class="step-nav-buttons">
+                                <button type="button" class="btn btn-secondary prev-step-btn">← BACK</button>
+                                <button type="button" class="btn btn-primary next-step-btn">CONTINUE →</button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3: Operational Action Requirements Mapping -->
+                        <div class="form-step-pane" data-step="3">
+                            <h3>Step 3: What pipeline requirements do you need from me?</h3>
+                            <div class="options-selection-grid">
+                                <label class="selectable-box"><input type="checkbox" name="needs" value="editing"><span>Core Video Editing & Timing</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="needs" value="ai_visuals"><span>Bespoke GenAI Visual Assets</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="needs" value="complete_ad"><span>Full Post-Production Assembly</span></label>
+                                <label class="selectable-box"><input type="checkbox" name="needs" value="direction"><span>Creative Direction & Concept Blueprinting</span></label>
+                            </div>
+                            <div class="step-nav-buttons">
+                                <button type="button" class="btn btn-secondary prev-step-btn">← BACK</button>
+                                <button type="button" class="btn btn-primary next-step-btn">CONTINUE →</button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 4: Parameters, Financials, Contact Data -->
+                        <div class="form-step-pane" data-step="4">
+                            <h3>Step 4: Finalize Campaign Parameters</h3>
+                            
+                            <div class="input-form-group">
+                                <label for="field-description">PROJECT OVERVIEW / VISION</label>
+                                <textarea id="field-description" name="description" rows="3" placeholder="Describe the narrative goals, product specs, or distribution timelines..." required></textarea>
+                            </div>
+
+                            <div class="input-row-flex">
+                                <div class="input-form-group">
+                                    <label for="field-budget">ESTIMATED INVESTMENT BUDGET</label>
+                                    <input type="text" id="field-budget" name="budget" placeholder="e.g. $2,000 USD" required>
+                                </div>
+                                <div class="input-form-group">
+                                    <label for="field-deadline">DELIVERY DEADLINE</label>
+                                    <input type="text" id="field-deadline" name="deadline" placeholder="e.g. October 15" required>
+                                </div>
+                            </div>
+
+                            <div class="input-row-flex">
+                                <div class="input-form-group">
+                                    <label for="field-name">YOUR FULL NAME</label>
+                                    <input type="text" id="field-name" name="client_name" placeholder="John Doe" required>
+                                </div>
+                                <div class="input-form-group">
+                                    <label for="field-email">CONTACT EMAIL ADDRESS</label>
+                                    <input type="email" id="field-email" name="client_email" placeholder="john@brand.com" required>
+                                </div>
+                            </div>
+
+                            <div class="step-nav-buttons">
+                                <button type="button" class="btn btn-secondary prev-step-btn">← BACK</button>
+                                <button type="submit" class="btn btn-accent">SUBMIT CAMPAIGN PITCH →</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="inquiry-success-message" id="formSuccessBlock">
+                        <h4>CAMPAIGN PITCH ARCHIVED</h4>
+                        <p>Inquiry received successfully. Ayush Kanojia will evaluate the strategic brief framework and return contact within 24 business hours.</p>
+                        <p class="policy-reminder-note"><strong>Operational Protocol Notice:</strong> Advance downpayment validation is strictly required before launching major custom content pipelines.</p>
+                    </div>
+                </div>
+
+                <!-- Footer Core Direct Link Array -->
+                <div class="contact-channels-matrix">
+                    <div class="channel-card">
+                        <span class="lbl">DIRECT COMMS</span>
+                        <a href="mailto:hello@ayushkanojia.com">hello@ayushkanojia.com</a>
+                    </div>
+                    <div class="channel-card">
+                        <span class="lbl">PROFESSIONAL NETWORK</span>
+                        <div class="channels-links">
+                            <a href="#" target="_blank" rel="noopener">Contra [Primary Hub]</a>
+                            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="#" target="_blank" rel="noopener">Instagram</a>
+                            <a href="#" target="_blank" rel="noopener">YouTube</a>
+                            <a href="#" target="_blank" rel="noopener">X</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Global Layout Footer -->
+    <footer class="global-footer">
+        <div class="footer-inner-wrapper">
+            <span class="logo-text">AYUSH KANOJIA</span>
+            <span class="copy-text">© 2026 AYUSH KANOJIA. ALL ARCHIVES SECURED UNDER ADVERTISING IP RIGHTS.</span>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
