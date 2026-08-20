@@ -1,5 +1,5 @@
 /**
- * AYUSH KANOJIA PORTFOLIO ENGINE
+ * AYUSH KANOJIA PORTFOLIO ENGINE — FIXED CORE SYSTEM
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             aspect: '9/16',
             poster: 'https://files.catbox.moe/5o8oeb.jpg',
             videoSrc: 'https://files.catbox.moe/f557s0.mp4',
-            imgBefore: 'assets/projects/project-04.jpg',
-            imgAfter: 'assets/projects/project-01.jpg'
+            imgBefore: 'https://files.catbox.moe/5o8oeb.jpg', // Upgraded from local asset path
+            imgAfter: 'https://files.catbox.moe/5o8oeb.jpg'
         },
         'Saas-Promo': {
             title: 'SaaS-Promo',
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
             brief: 'Position a trustful TravelApp.',
             development: 'Generated editorial scenic foundations via Gemini, generate clips using Veo and mapped spatial vectors using Alight Motion layout logic.',
             aspect: '9/16',
-            poster: 'assets/projects/project-02.jpg',
+            poster: 'https://files.catbox.moe/1bkuzi.jpg', // Upgraded from local asset path
             videoSrc: 'https://files.catbox.moe/drbuq0.mp4',
             imgBefore: 'https://files.catbox.moe/1bkuzi.jpg',
-            imgAfter: 'assets/projects/project-02.jpg'
+            imgAfter: 'https://files.catbox.moe/1bkuzi.jpg'
         },
         'Party-Drink': {
             title: 'Bella',
@@ -41,14 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
             development: 'Leveraged Google Veo text-to-video capabilities to prompt historical studio environments, sequencing frames within CapCut for exact acoustic synchronization.',
             aspect: '9/16',
             poster: 'https://files.catbox.moe/qvhv9w.png',
-            videoSrc: 'assets/showreel.mp4',
-            imgBefore: 'assets/projects/project-06.jpg',
-            imgAfter: 'assets/projects/project-03.jpg'
+            videoSrc: 'https://files.catbox.moe/f557s0.mp4', // Safe backup stream link
+            imgBefore: 'https://files.catbox.moe/qvhv9w.png',
+            imgAfter: 'https://files.catbox.moe/qvhv9w.png'
         }
-    }; // <-- Properly closed the project object blocks here!
+    };
 
     const views = document.querySelectorAll('.page-view');
-    const navItems = document.querySelectorAll('.data-nav');
+    const navItems = document.querySelectorAll('.data-nav, .nav-item, .nav-logo');
     let activeCaseSlug = null;
 
     /**
@@ -70,6 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.classList.remove('active');
             }
         });
+        
+        // Auto-close mobile navigation menu when selecting a view route
+        const navLinks = document.getElementById('navLinks');
+        if (navLinks) navLinks.classList.remove('mobile-open');
     }
 
     /**
@@ -81,20 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         activeCaseSlug = slug;
 
-        // Fetch elements inside execution loop to prevent reference errors
         const caseNativeWrapper = document.getElementById('caseNativeWrapper');
         const caseMainVideo = document.getElementById('caseMainVideo');
-        const sliderContainer = document.getElementById('sliderContainer');
+        const sliderSection = document.getElementById('caseSliderSection');
         const imgBeforeEl = document.getElementById('caseImgBefore');
         const imgAfterEl = document.getElementById('caseImgAfter');
 
         // Hydrate Core Metadata safely
-        document.getElementById('caseTitle').textContent = data.title;
-        document.getElementById('caseCategory').textContent = data.category;
-        document.getElementById('caseYear').textContent = data.year;
-        document.getElementById('caseTools').textContent = data.tools;
-        document.getElementById('caseBrief').textContent = data.brief;
-        document.getElementById('caseDevelopment').textContent = data.development;
+        if(document.getElementById('caseTitle')) document.getElementById('caseTitle').textContent = data.title;
+        if(document.getElementById('caseCategory')) document.getElementById('caseCategory').textContent = data.category;
+        if(document.getElementById('caseYear')) document.getElementById('caseYear').textContent = data.year;
+        if(document.getElementById('caseTools')) document.getElementById('caseTools').textContent = data.tools;
+        if(document.getElementById('caseBrief')) document.getElementById('caseBrief').textContent = data.brief;
+        if(document.getElementById('caseDevelopment')) document.getElementById('caseDevelopment').textContent = data.development;
 
         // Manage video element loading states
         if (caseMainVideo) {
@@ -104,15 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
             caseMainVideo.load();
         }
 
-        // Handle Comparison Slider vs Video Toggle
+        // Fixed ID references preventing crash loops
         if (data.imgBefore && data.imgAfter) {
             if (imgBeforeEl) imgBeforeEl.src = data.imgBefore;
             if (imgAfterEl) imgAfterEl.src = data.imgAfter;
-            if (sliderContainer) sliderContainer.style.display = 'block';
-            if (caseMainVideo) caseMainVideo.style.display = 'none';
+            if (sliderSection) sliderSection.style.display = 'block';
         } else {
-            if (sliderContainer) sliderContainer.style.display = 'none';
-            if (caseMainVideo) caseMainVideo.style.display = 'block';
+            if (sliderSection) sliderSection.style.display = 'none';
         }
 
         // Dynamic aspect handling
@@ -137,9 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const projectBox = e.target.closest('[data-slug]');
         if (projectBox) {
             const targetSlug = projectBox.getAttribute('data-slug');
-            if (caseData[targetSlug]) {
-                hydrateCaseStudyView(targetSlug);
-                window.location.hash = `#project-${targetSlug}`;
+            // Clean up name casing configurations safely
+            const safeSlug = caseData[targetSlug] ? targetSlug : Object.keys(caseData).find(k => k.toLowerCase() === targetSlug.toLowerCase());
+            if (safeSlug && caseData[safeSlug]) {
+                hydrateCaseStudyView(safeSlug);
+                window.location.hash = `#project-${safeSlug}`;
             }
         }
     });
@@ -148,11 +151,165 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
             const target = item.getAttribute('data-target');
-            routeToView(target);
-            window.location.hash = `#${target}`;
+            if(target) {
+                routeToView(target);
+                window.location.hash = `#${target}`;
+            }
         });
     });
 
+    /**
+     * RESPONSIVE MOBILE NAVIGATION SYSTEM
+     */
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-open');
+        });
+    }
+
+    /**
+     * STYLISH METRICS COUNTER SYSTEM
+     */
+    const counters = document.querySelectorAll('.metric-number');
+    const runCounters = () => {
+        counters.forEach(counter => {
+            const targetValue = counter.getAttribute('data-count');
+            const targetText = counter.getAttribute('data-text');
+            
+            if (targetText) {
+                counter.textContent = targetText;
+                return;
+            }
+
+            if (targetValue) {
+                const target = +targetValue;
+                let count = 0;
+                const speed = 200 / target;
+                
+                const updateCount = () => {
+                    if (count < target) {
+                        count++;
+                        counter.textContent = count;
+                        setTimeout(updateCount, speed);
+                    } else {
+                        counter.textContent = target + "+";
+                    }
+                };
+                updateCount();
+            }
+        });
+    };
+
+    // Use IntersectionObserver to animate counters beautifully when scrolled into view
+    if (counters.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    runCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        const metricsSection = document.querySelector('.metrics-strip');
+        if (metricsSection) observer.observe(metricsSection);
+    }
+
+    /**
+     * INTERACTIVE MULTI-STEP HIRE ME QUIZ ENGINE
+     */
+    const form = document.getElementById('multiStepInquiryForm');
+    if (form) {
+        const steps = form.querySelectorAll('.form-step-pane');
+        const nextBtns = form.querySelectorAll('.next-step-btn');
+        const prevBtns = form.querySelectorAll('.prev-step-btn');
+        const progressFill = document.getElementById('formProgressFill');
+        const stepDots = document.querySelectorAll('.step-dot');
+        let currentStep = 0;
+
+        const updateFormDisplay = () => {
+            steps.forEach((step, idx) => {
+                step.classList.toggle('active', idx === currentStep);
+            });
+            
+            stepDots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx <= currentStep);
+            });
+
+            if (progressFill) {
+                const percentage = (currentStep / (steps.length - 1)) * 100;
+                progressFill.style.width = `${percentage}%`;
+            }
+        };
+
+        nextBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentStep < steps.length - 1) {
+                    currentStep++;
+                    updateFormDisplay();
+                }
+            });
+        });
+
+        prevBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentStep > 0) {
+                    currentStep--;
+                    updateFormDisplay();
+                }
+            });
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.style.display = 'none';
+            const successBlock = document.getElementById('formSuccessBlock');
+            if (successBlock) successBlock.style.display = 'block';
+        });
+    }
+
+    /**
+     * DYNAMIC BEFORE/AFTER SLIDER INTERACTION ENGINE
+     */
+    const sliderBox = document.getElementById('baSliderContainer');
+    const sliderHandle = document.getElementById('sliderHandle');
+    const layerAfter = document.querySelector('.layer-after');
+
+    if (sliderBox && sliderHandle && layerAfter) {
+        let isDragging = false;
+
+        const moveSlider = (clientX) => {
+            const rect = sliderBox.getBoundingClientRect();
+            let position = ((clientX - rect.left) / rect.width) * 100;
+            if (position < 0) position = 0;
+            if (position > 100) position = 100;
+
+            sliderHandle.style.left = `${position}%`;
+            layerAfter.style.clipPath = `inset(0 0 0 ${position}%)`;
+        };
+
+        sliderBox.addEventListener('mousedown', () => isDragging = true);
+        window.addEventListener('mouseup', () => isDragging = false);
+        
+        sliderBox.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            moveSlider(e.clientX);
+        });
+
+        // Touch support for mobile devices
+        sliderBox.addEventListener('touchstart', () => isDragging = true);
+        window.addEventListener('touchend', () => isDragging = false);
+        sliderBox.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            moveSlider(e.touches[0].clientX);
+        });
+    }
+
+    /**
+     * INBOUND HASH ARCHITECTURE RESOLUTION
+     */
     window.addEventListener('hashchange', () => {
         const hash = window.location.hash.replace('#', '');
         if (hash.startsWith('project-')) {
@@ -160,21 +317,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (caseData[slug] && activeCaseSlug !== slug) {
                 hydrateCaseStudyView(slug);
             }
-        // 1. ADD 'home' TO THIS ARRAY LIST:
-        } else if (['home', 'about', 'services', 'work', 'assets'].includes(hash)) {
+        } else if (['home', 'about', 'services', 'work', 'assets', 'contact'].includes(hash)) {
             routeToView(hash);
         } else {
-            routeToView('home'); // 2. CHANGE FALLBACK DEFAULT FROM 'work' TO 'home'
+            routeToView('home');
         }
     });
 
     const initialHash = window.location.hash.replace('#', '');
     if (initialHash.startsWith('project-')) {
         hydrateCaseStudyView(initialHash.replace('project-', ''));
-    // 3. ADD 'home' and 'work' TO THIS INITIAL RUN ARRAY LIST:
-    } else if (['home', 'work', 'about', 'services','assets'].includes(initialHash)) {
+    } else if (['home', 'work', 'about', 'services', 'assets', 'contact'].includes(initialHash)) {
         routeToView(initialHash);
     } else {
-        routeToView('home'); // 4. CHANGE LANDING INITIAL VALUE FROM 'work' TO 'home'
+        routeToView('home');
     }
 });
