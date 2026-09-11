@@ -43,7 +43,46 @@ document.addEventListener('DOMContentLoaded', () => {
             videoSrc: 'https://www.dropbox.com/scl/fi/nvcr3kyl7a51zb7mza5r6/Promotional-Reel.mp4?rlkey=64y06qu0lmilnlrmwv9umnwx2&st=irqwpvmw&dl=1',
             imgBefore: 'https://files.catbox.moe/qvhv9w.png',
             imgAfter: 'https://files.catbox.moe/qvhv9w.png'
-        }
+        },
+      'socialyx': {
+            title: 'Socialyx',
+            category: 'AI Gen Ad / Veo / Veo Loop',
+            year: '2026',
+            tools: 'Gemini, Google Veo, CapCut',
+            brief: 'Design a high-converting marketing reel for Socialyx to pitch their creator database directly to brands under a rapid 14-hour turnaround. The core strategy flipped their smaller agency status into a competitive advantage, proving why boutique agility delivers 10x better results.',
+            development: 'Built on a 3-phase workflow (Scripting → AI Voice/Avatar → Editing), the reel pairs a bold hook with kinetic typography for quick scannability. Fast-paced sound design, punchy audio transitions, and UI overlays maintain viewer engagement, closing with a direct CTA driving brands straight to DMs.',
+            aspect: '9/16',
+            poster: 'https://files.catbox.moe/ixi93n.png',
+            videoSrc: 'https://www.dropbox.com/scl/fi/0ew50k08n54diicnij9qs/Socialyx.mp4?rlkey=03lewgp8knbiiojffrjj6un6j&st=fnmzbrjt&dl=1',
+            imgBefore: 'https://files.catbox.moe/fqe4gc.jpeg',
+            imgAfter: 'https://files.catbox.moe/1u6fca.jpg'
+        },
+  'scaleonsteroids': {
+            title: 'ScaleOnSteroids',
+            category: 'AD / CapCut Editing',
+            year: '2026',
+            tools: 'CapCut',
+            brief: 'Transform complex AISO strategies into a high-converting, scroll-stopping AI talking-head ad for ScaleOnSteroids. The goal was to build a complete end-to-end video framework (Scripting → AI Generation → Post-Production) engineered for authority and direct conversion.',
+            development: 'Photorealistic AI avatars with natural voice synthesis establish immediate brand authority, complemented by custom UI mockups and loss-aversion graphic overlays that target key pain points. Frame-accurate cuts and kinetic captions drive peak retention, with post-production executed using Gemini, ChatGPT, Veo, and VN Video Editor.',
+            aspect: '9/16',
+            poster: 'https://files.catbox.moe/jfybpv.png',
+            videoSrc: 'https://www.dropbox.com/scl/fi/xansh0tw5zqbu3oxbpjkq/Marketing_Campaign.mp4?rlkey=8dpatugc03d7dwuslrb66c2yf&st=48t0tspv&dl=1',
+            imgBefore: 'https://files.catbox.moe/lbydmf.jpeg',
+            imgAfter: 'https://files.catbox.moe/7ysiy5.jpg'
+        },
+'timeline-breakdown': {
+            title: 'Timeline Breakdown',
+            category: 'Timeline Breakdown / ChatGPT Animate',
+            year: '2026',
+            tools: 'ChatGPT, Animate',
+            brief: 'Transform static fashion clips into a high-energy commercial promo for Soleil Streetwear Summer Collection 2026. The objective was to build a scroll-stopping, high-retention video ad engineered for maximum viewer engagement and product conversion.',
+            development: 'AI-generated backgrounds and ChatGPT assets set the visual aesthetic, while beat-synced, frame-accurate cuts maintain high viewer retention. Dynamic kinetic typography highlights core sales promos, with the entire video edited, color-graded, and finalized within a 100% CapCut Mobile pipeline.',
+            aspect: '4/3',
+            poster: 'https://files.catbox.moe/kyb26b.jpg',
+            videoSrc: 'https://www.dropbox.com/scl/fi/ioerva80xw3w7ucmwq9f8/Soleil_Streetwear_Breakdown.mp4?rlkey=eqbg56s0h48xduuaky8jg1aut&st=r2dmfuvo&dl=1',
+            imgBefore: 'https://files.catbox.moe/n5fox5.png',
+            imgAfter: 'https://files.catbox.moe/d36rkf.png'
+        },
     };
 
     const views = document.querySelectorAll('.page-view');
