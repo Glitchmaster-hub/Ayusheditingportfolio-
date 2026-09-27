@@ -57,19 +57,19 @@ document.addEventListener('DOMContentLoaded', () => {
             imgBefore: 'https://files.catbox.moe/fqe4gc.jpeg',
             imgAfter: 'https://files.catbox.moe/1u6fca.jpg'
         },
-  'scaleonsteroids': {
-            title: 'ScaleOnSteroids',
-            category: 'AD / CapCut Editing',
-            year: '2026',
-            tools: 'CapCut',
-            brief: 'Transform complex AISO strategies into a high-converting, scroll-stopping AI talking-head ad for ScaleOnSteroids. The goal was to build a complete end-to-end video framework (Scripting → AI Generation → Post-Production) engineered for authority and direct conversion.',
-            development: 'Photorealistic AI avatars with natural voice synthesis establish immediate brand authority, complemented by custom UI mockups and loss-aversion graphic overlays that target key pain points. Frame-accurate cuts and kinetic captions drive peak retention, with post-production executed using Gemini, ChatGPT, Veo, and VN Video Editor.',
-            aspect: '9/16',
-            poster: 'https://files.catbox.moe/jfybpv.png',
-            videoSrc: 'https://www.dropbox.com/scl/fi/xansh0tw5zqbu3oxbpjkq/Marketing_Campaign.mp4?rlkey=8dpatugc03d7dwuslrb66c2yf&st=48t0tspv&dl=1',
-            imgBefore: 'https://files.catbox.moe/lbydmf.jpeg',
-            imgAfter: 'https://files.catbox.moe/7ysiy5.jpg'
-        },
+'ai-avatar': {
+    title: 'AI Talking Head Breakdown',
+    category: 'AI Avatar Reel / CapCut Breakdown',
+    year: '2026',
+    tools: 'CapCut, AI Avatar, ElevenLabs, ChatGPT',
+    brief: 'Created a high-converting, scroll-stopping talking head AI avatar reel using CapCut and GenAI tools. Designed to showcase realistic facial animation, natural voice synchronization, and fast-paced breakdown cuts.',
+    development: 'Leveraged photorealistic AI avatar generation paired with voice synthesis. Executed frame-accurate cuts, kinetic typography, dynamic background transitions, and custom graphic overlays inside CapCut for maximum viewer engagement.',
+    aspect: '9/16',
+    poster: 'https://files.catbox.moe/a9yf8f.png',
+    videoSrc: 'https://www.dropbox.com/scl/fi/l1t2rr6b6dff26in43g8q/AI_Avatar_Reel.mp4?rlkey=1745ymapqkyw8ij9wnptjmlve&st=qdqhwbyz&dl=1',
+    imgBefore: 'https://files.catbox.moe/1bydef.png',
+    imgAfter: 'https://files.catbox.moe/7ysiy5.png'
+  },
 'timeline-breakdown': {
             title: 'Timeline Breakdown',
             category: 'Timeline Breakdown / ChatGPT Animate',
