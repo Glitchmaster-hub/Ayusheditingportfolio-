@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
             aspect: '4/3',
             poster: 'https://www.dropbox.com/scl/fi/prnt1qbqhvokvjxjx49cv/Soleil-Streetwear-s-Cover.png?rlkey=7v76dfxip91hgnw2u6t6qls4c&st=novcoc2g&dl=1',
             videoSrc: 'https://www.dropbox.com/scl/fi/zhnpieys199etfsd6jyp3/Soleil-streetwear-Timeline-Showcasing.mp4?rlkey=upji4ychjrfv8bvsmmn0enbmu&st=k6r1592a&dl=1',
-            imgBefore: 'https://files.catbox.moe/n5fox5.png',
-            imgAfter: 'https://files.catbox.moe/d36rkf.png'
+            imgBefore: 'https://www.dropbox.com/scl/fi/p353ic6b0s5cwk0omcl11/Before-cover-111.png?rlkey=e0lq90jd6g5hdjijf88k2tldy&st=wd7gurxu&dl=1',
+            imgAfter: 'https://www.dropbox.com/scl/fi/n1428s874iavockhv7qj7/After-cover-111.png?rlkey=skp2sxzmq6ppqumr49l8isgz7&st=e9u2woqp&dl=1'
         },
     };
 
