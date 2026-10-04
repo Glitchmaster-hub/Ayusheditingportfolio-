@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             brief: 'Construct a rapid-paced visual campaign showcasing luxury streetwear identity across modern social distribution vectors.',
             development: 'Generated concepts via ChatGPT, assets via Gemini, paired with surgical timeline split-cuts in mobile engines to engineer high consumer retention metrics.',
             aspect: '9/16',
-            poster: 'https://files.catbox.moe/cit1ii.jpg',
+            poster: 'https://www.dropbox.com/scl/fi/8hpk5p2blzflxetkob67u/Soleil-Streetwear-reel-Cover.jpg?rlkey=rbc4gpa85faq4800k5xc2uwfa&st=l66yngf1&dl=1',
             videoSrc: 'https://www.dropbox.com/scl/fi/dg90reewgetto0aneoh8l/Soleil-Streetwear.mp4?rlkey=0xu38clgz93c7ta764lge1g5l&st=fv4u7m6f&dl=1',
             imgBefore: 'https://files.catbox.moe/5o8oeb.jpg',
             imgAfter: 'https://files.catbox.moe/5o8oeb.jpg'
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             brief: 'Transform static fashion clips into a high-energy commercial promo for Soleil Streetwear Summer Collection 2026. The objective was to build a scroll-stopping, high-retention video ad engineered for maximum viewer engagement and product conversion.',
             development: 'AI-generated backgrounds and ChatGPT assets set the visual aesthetic, while beat-synced, frame-accurate cuts maintain high viewer retention. Dynamic kinetic typography highlights core sales promos, with the entire video edited, color-graded, and finalized within a 100% CapCut Mobile pipeline.',
             aspect: '4/3',
-            poster: 'https://files.catbox.moe/owqjsh.png',
+            poster: 'https://www.dropbox.com/scl/fi/prnt1qbqhvokvjxjx49cv/Soleil-Streetwear-s-Cover.png?rlkey=7v76dfxip91hgnw2u6t6qls4c&st=novcoc2g&dl=1',
             videoSrc: 'https://www.dropbox.com/scl/fi/zhnpieys199etfsd6jyp3/Soleil-streetwear-Timeline-Showcasing.mp4?rlkey=upji4ychjrfv8bvsmmn0enbmu&st=k6r1592a&dl=1',
             imgBefore: 'https://files.catbox.moe/n5fox5.png',
             imgAfter: 'https://files.catbox.moe/d36rkf.png'
