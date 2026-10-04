@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             poster: 'https://www.dropbox.com/scl/fi/8hpk5p2blzflxetkob67u/Soleil-Streetwear-reel-Cover.jpg?rlkey=rbc4gpa85faq4800k5xc2uwfa&st=l66yngf1&dl=1',
             videoSrc: 'https://www.dropbox.com/scl/fi/dg90reewgetto0aneoh8l/Soleil-Streetwear.mp4?rlkey=0xu38clgz93c7ta764lge1g5l&st=fv4u7m6f&dl=1',
             imgBefore: 'https://www.dropbox.com/scl/fi/6xim63a0z7yhvi4r7g1k5/Before-cover.png?rlkey=cpcvce6mhtsj140vjgikepfg9&st=h44opyrr&dl=1',
-            imgAfter: 'https://www.dropbox.com/scl/fi/6xim63a0z7yhvi4r7g1k5/Before-cover.png?rlkey=cpcvce6mhtsj140vjgikepfg9&st=3x0ew1xk&dl=1'
+            imgAfter: 'https://www.dropbox.com/scl/fi/m784ll9019re40hojoxna/After-cover.png?rlkey=8tffjmvxufhwdq9uuwfths941&st=ojhnwy6e&dl=1'
         },
         'saas-promo': {
             title: 'SaaS Promo',
