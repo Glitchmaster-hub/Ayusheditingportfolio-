@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
     aspect: '9/16',
     poster: 'https://files.catbox.moe/a9yf8f.png',
     videoSrc: 'https://www.dropbox.com/scl/fi/l1t2rr6b6dff26in43g8q/AI_Avatar_Reel.mp4?rlkey=1745ymapqkyw8ij9wnptjmlve&st=qdqhwbyz&dl=1',
-    imgBefore: 'https://files.catbox.moe/1bydef.png',
-    imgAfter: 'https://files.catbox.moe/7ysiy5.png'
+    imgBefore: 'https://www.dropbox.com/scl/fi/pr72njoubruwxv2qicuvt/Before-cover-112.png?rlkey=ws5izq1baiphf5ztpwqexrodj&st=zbf7w239&dl=1',
+    imgAfter: 'https://www.dropbox.com/scl/fi/r7yx7e8tq415qajp6y8d7/After-cover-112.png?rlkey=w7zoke4vrxkleey5rawxik2zj&st=c7w97r1d&dl=1'
   },
 'timeline-breakdown': {
             title: 'Timeline Breakdown',
