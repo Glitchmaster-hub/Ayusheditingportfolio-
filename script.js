@@ -18,19 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
             imgBefore: 'https://www.dropbox.com/scl/fi/6xim63a0z7yhvi4r7g1k5/Before-cover.png?rlkey=cpcvce6mhtsj140vjgikepfg9&st=h44opyrr&dl=1',
             imgAfter: 'https://www.dropbox.com/scl/fi/m784ll9019re40hojoxna/After-cover.png?rlkey=8tffjmvxufhwdq9uuwfths941&st=ojhnwy6e&dl=1'
         },
-        'saas-promo': {
-            title: 'SaaS Promo',
-            category: 'Tech Advertisement',
-            year: '2026',
-            tools: 'Gemini, Veo, Alight Motion',
-            brief: 'Position a trustful and scalable TravelApp user experience ecosystem seamlessly via generative presentation formats.',
-            development: 'Generated editorial scenic foundations via Gemini, rendered custom video clips using Veo, and mapped final spatial vectors using Alight Motion layout logic.',
-            aspect: '9/16',
-            poster: 'https://files.catbox.moe/1bkuzi.jpg',
-            videoSrc: 'https://files.catbox.moe/drbuq0.mp4',
-            imgBefore: 'https://files.catbox.moe/1bkuzi.jpg',
-            imgAfter: 'https://files.catbox.moe/1bkuzi.jpg'
-        },
+        'midnight-perfume': {
+    title: 'Midnight Eau De Parfum',
+    category: 'Product Cinematic' ,
+    year: '2026',
+    tools: 'ChatGPT, Claude, Google Veo, CapCut',
+    brief: 'Craft a moody, high-end luxury perfume commercial for "Midnight Eau De Parfum" focusing on atmospheric mist macro-shots, elegant pacing, and nocturnal brand identity.',
+    development: 'Engineered fluid smoke and macro liquid dynamics via text-to-video prompts, layered with sharp bottle compositing, sleek typographic reveals, and rhythmic acoustic timing.',
+    aspect: '9/16',
+    poster: 'https://www.dropbox.com/scl/fi/rqvtk4d6gwjrzwycnn4ad/Perfume-Ad_Cover.jpg?rlkey=bauctxrht2o0tjc1k1495nxfv&st=moyrzfyl&dl=1',
+    videoSrc: 'https://files.catbox.moe/6ncojd.mp4',
+    imgBefore: 'YOUR_BEFORE_FRAME_URL.jpg',
+    imgAfter: 'YOUR_AFTER_FRAME_URL.jpg'
+},   
         'party-drink': {
             title: 'Party Drink (Bella)',
             category: 'B-roll Campaign / Product Cinema',
@@ -70,6 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
     imgBefore: 'https://www.dropbox.com/scl/fi/pr72njoubruwxv2qicuvt/Before-cover-112.png?rlkey=ws5izq1baiphf5ztpwqexrodj&st=zbf7w239&dl=1',
     imgAfter: 'https://www.dropbox.com/scl/fi/r7yx7e8tq415qajp6y8d7/After-cover-112.png?rlkey=w7zoke4vrxkleey5rawxik2zj&st=c7w97r1d&dl=1'
   },
+        'saas-promo': {
+            title: 'SaaS Promo',
+            category: 'Tech Advertisement',
+            year: '2026',
+            tools: 'Gemini, Veo, Alight Motion',
+            brief: 'Position a trustful and scalable TravelApp user experience ecosystem seamlessly via generative presentation formats.',
+            development: 'Generated editorial scenic foundations via Gemini, rendered custom video clips using Veo, and mapped final spatial vectors using Alight Motion layout logic.',
+            aspect: '9/16',
+            poster: 'https://files.catbox.moe/1bkuzi.jpg',
+            videoSrc: 'https://files.catbox.moe/drbuq0.mp4',
+            imgBefore: 'https://files.catbox.moe/1bkuzi.jpg',
+            imgAfter: 'https://files.catbox.moe/1bkuzi.jpg'
+        },
 'timeline-breakdown': {
             title: 'Timeline Breakdown',
             category: 'Timeline Breakdown / ChatGPT Animate',
