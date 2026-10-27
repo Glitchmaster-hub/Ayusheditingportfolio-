@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
 
-   'timeline-breakdown': {
+   'timeline-showcase': {
     title: 'Aura & Arc Coffee — AI Commercial',
     category: 'AI Commercial / CapCut Timeline Showcase',
     year: '2026',
