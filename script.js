@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     aspect: '9/16',
     poster: 'https://www.dropbox.com/scl/fi/rqvtk4d6gwjrzwycnn4ad/Perfume-Ad_Cover.jpg?rlkey=bauctxrht2o0tjc1k1495nxfv&st=moyrzfyl&dl=1',
     videoSrc: 'https://files.catbox.moe/6ncojd.mp4',
-    imgBefore: 'YOUR_BEFORE_FRAME_URL.jpg',
-    imgAfter: 'YOUR_AFTER_FRAME_URL.jpg'
+    imgBefore: 'https://files.catbox.moe/ei6eqi.png',
+    imgAfter: 'https://files.catbox.moe/5fucxw.png'
 },   
       'socialyx': {
             title: 'Socialyx',
