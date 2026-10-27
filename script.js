@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
             aspect: '9/16',
             poster: 'https://files.catbox.moe/ixi93n.png',
             videoSrc: 'https://files.catbox.moe/wzba2a.mp4',
-            imgBefore: 'https://files.catbox.moe/fqe4gc.jpeg',
-            imgAfter: 'https://files.catbox.moe/1u6fca.jpg'
+            imgBefore: 'https://files.catbox.moe/nu5yap.png',
+            imgAfter: 'https://files.catbox.moe/ye4v64.png'
         },
 
       'party-drink': {
