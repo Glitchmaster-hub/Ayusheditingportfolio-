@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             brief: 'Design a high-converting marketing reel for Socialyx to pitch their creator database directly to brands under a rapid 14-hour turnaround. The core strategy flipped their smaller agency status into a competitive advantage, proving why boutique agility delivers 10x better results.',
             development: 'Built on a 3-phase workflow (Scripting → AI Voice/Avatar → Editing), the reel pairs a bold hook with kinetic typography for quick scannability. Fast-paced sound design, punchy audio transitions, and UI overlays maintain viewer engagement, closing with a direct CTA driving brands straight to DMs.',
             aspect: '9/16',
-            poster: 'https://files.catbox.moe/ixi93n.png',
+            poster: 'https://files.catbox.moe/9vvdvl.jpg',
             videoSrc: 'https://files.catbox.moe/wzba2a.mp4',
             imgBefore: 'https://files.catbox.moe/nu5yap.png',
             imgAfter: 'https://files.catbox.moe/ye4v64.png'
@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
             brief: 'Produce a high-end luxury brand asset deployment focusing on pacing structures optimized for commercial party mood conversions.',
             development: 'Leveraged Google Veo text-to-video capabilities to prompt historical studio environments, sequencing frames within CapCut for exact acoustic synchronization.',
             aspect: '9/16',
-            poster: 'https://files.catbox.moe/qvhv9w.png',
+            poster: 'https://files.catbox.moe/k9f3rp.jpg',
             videoSrc: 'https://www.dropbox.com/scl/fi/nvcr3kyl7a51zb7mza5r6/Promotional-Reel.mp4?rlkey=64y06qu0lmilnlrmwv9umnwx2&st=irqwpvmw&dl=1',
-            imgBefore: 'https://files.catbox.moe/qvhv9w.png',
-            imgAfter: 'https://files.catbox.moe/qvhv9w.png'
+            imgBefore: 'https://files.catbox.moe/ljv35n.png',
+            imgAfter: 'https://files.catbox.moe/z0yi9l.png'
         },
 
 
@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
     aspect: '4/3',
     poster: 'https://files.catbox.moe/bgkkgu.png',
     videoSrc: 'https://files.catbox.moe/1xunl2.mp4',
-    imgBefore: 'YOUR_BEFORE_IMAGE_URL.jpg',
-    imgAfter: 'YOUR_AFTER_IMAGE_URL.jpg'
+    imgBefore: 'https://files.catbox.moe/eegfca.png',
+    imgAfter: 'https://files.catbox.moe/oys8hj.png'
 },
       
 'timeline-breakdown': {
@@ -429,3 +429,4 @@ document.addEventListener('DOMContentLoaded', () => {
         routeToView('home');
     }
 });
+
