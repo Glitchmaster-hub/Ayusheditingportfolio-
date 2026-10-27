@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             development: 'Generated concepts via ChatGPT, assets via Gemini, paired with surgical timeline split-cuts in mobile engines to engineer high consumer retention metrics.',
             aspect: '9/16',
             poster: 'https://www.dropbox.com/scl/fi/8hpk5p2blzflxetkob67u/Soleil-Streetwear-reel-Cover.jpg?rlkey=rbc4gpa85faq4800k5xc2uwfa&st=l66yngf1&dl=1',
-            videoSrc: 'https://www.dropbox.com/scl/fi/dg90reewgetto0aneoh8l/Soleil-Streetwear.mp4?rlkey=0xu38clgz93c7ta764lge1g5l&st=fv4u7m6f&dl=1',
+            videoSrc: 'https://files.catbox.moe/ebyhd3.mp4',
             imgBefore: 'https://www.dropbox.com/scl/fi/6xim63a0z7yhvi4r7g1k5/Before-cover.png?rlkey=cpcvce6mhtsj140vjgikepfg9&st=h44opyrr&dl=1',
             imgAfter: 'https://www.dropbox.com/scl/fi/m784ll9019re40hojoxna/After-cover.png?rlkey=8tffjmvxufhwdq9uuwfths941&st=ojhnwy6e&dl=1'
         },
@@ -31,7 +31,21 @@ document.addEventListener('DOMContentLoaded', () => {
     imgBefore: 'YOUR_BEFORE_FRAME_URL.jpg',
     imgAfter: 'YOUR_AFTER_FRAME_URL.jpg'
 },   
-        'party-drink': {
+      'socialyx': {
+            title: 'Socialyx',
+            category: 'AI Gen Ad / Veo / Veo Loop',
+            year: '2026',
+            tools: 'Gemini, Google Veo, CapCut',
+            brief: 'Design a high-converting marketing reel for Socialyx to pitch their creator database directly to brands under a rapid 14-hour turnaround. The core strategy flipped their smaller agency status into a competitive advantage, proving why boutique agility delivers 10x better results.',
+            development: 'Built on a 3-phase workflow (Scripting → AI Voice/Avatar → Editing), the reel pairs a bold hook with kinetic typography for quick scannability. Fast-paced sound design, punchy audio transitions, and UI overlays maintain viewer engagement, closing with a direct CTA driving brands straight to DMs.',
+            aspect: '9/16',
+            poster: 'https://files.catbox.moe/ixi93n.png',
+            videoSrc: 'https://files.catbox.moe/wzba2a.mp4',
+            imgBefore: 'https://files.catbox.moe/fqe4gc.jpeg',
+            imgAfter: 'https://files.catbox.moe/1u6fca.jpg'
+        },
+
+      'party-drink': {
             title: 'Party Drink (Bella)',
             category: 'B-roll Campaign / Product Cinema',
             year: '2026',
@@ -43,19 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
             videoSrc: 'https://www.dropbox.com/scl/fi/nvcr3kyl7a51zb7mza5r6/Promotional-Reel.mp4?rlkey=64y06qu0lmilnlrmwv9umnwx2&st=irqwpvmw&dl=1',
             imgBefore: 'https://files.catbox.moe/qvhv9w.png',
             imgAfter: 'https://files.catbox.moe/qvhv9w.png'
-        },
-      'socialyx': {
-            title: 'Socialyx',
-            category: 'AI Gen Ad / Veo / Veo Loop',
-            year: '2026',
-            tools: 'Gemini, Google Veo, CapCut',
-            brief: 'Design a high-converting marketing reel for Socialyx to pitch their creator database directly to brands under a rapid 14-hour turnaround. The core strategy flipped their smaller agency status into a competitive advantage, proving why boutique agility delivers 10x better results.',
-            development: 'Built on a 3-phase workflow (Scripting → AI Voice/Avatar → Editing), the reel pairs a bold hook with kinetic typography for quick scannability. Fast-paced sound design, punchy audio transitions, and UI overlays maintain viewer engagement, closing with a direct CTA driving brands straight to DMs.',
-            aspect: '9/16',
-            poster: 'https://files.catbox.moe/ixi93n.png',
-            videoSrc: 'https://www.dropbox.com/scl/fi/0ew50k08n54diicnij9qs/Socialyx.mp4?rlkey=03lewgp8knbiiojffrjj6un6j&st=fnmzbrjt&dl=1',
-            imgBefore: 'https://files.catbox.moe/fqe4gc.jpeg',
-            imgAfter: 'https://files.catbox.moe/1u6fca.jpg'
         },
 'ai-avatar': {
     title: 'AI Talking Head Breakdown',
@@ -70,19 +71,21 @@ document.addEventListener('DOMContentLoaded', () => {
     imgBefore: 'https://www.dropbox.com/scl/fi/pr72njoubruwxv2qicuvt/Before-cover-112.png?rlkey=ws5izq1baiphf5ztpwqexrodj&st=zbf7w239&dl=1',
     imgAfter: 'https://www.dropbox.com/scl/fi/r7yx7e8tq415qajp6y8d7/After-cover-112.png?rlkey=w7zoke4vrxkleey5rawxik2zj&st=c7w97r1d&dl=1'
   },
-        'saas-promo': {
-            title: 'SaaS Promo',
-            category: 'Tech Advertisement',
-            year: '2026',
-            tools: 'Gemini, Veo, Alight Motion',
-            brief: 'Position a trustful and scalable TravelApp user experience ecosystem seamlessly via generative presentation formats.',
-            development: 'Generated editorial scenic foundations via Gemini, rendered custom video clips using Veo, and mapped final spatial vectors using Alight Motion layout logic.',
-            aspect: '9/16',
-            poster: 'https://files.catbox.moe/1bkuzi.jpg',
-            videoSrc: 'https://files.catbox.moe/drbuq0.mp4',
-            imgBefore: 'https://files.catbox.moe/1bkuzi.jpg',
-            imgAfter: 'https://files.catbox.moe/1bkuzi.jpg'
-        },
+
+   'timeline-breakdown': {
+    title: 'Aura & Arc Coffee — AI Commercial',
+    category: 'AI Commercial / CapCut Timeline Showcase',
+    year: '2026',
+    tools: 'CapCut, Midjourney, GenAI, ElevenLabs',
+    brief: 'Constructed a grounded, high-retention 97% AI commercial for Aura & Arc Coffee. The strategy treated AI-generated clips as raw footage—focusing on character consistency, matching environmental lighting, realistic pacing, and emotional story arcs.',
+    development: 'Executed frame-accurate cuts to build early morning friction, paired with precise sound design so every key beat hits at the exact millisecond. Integrated custom UI overlays, sound-effects transitions, and dynamic branding assets directly inside the CapCut timeline.',
+    aspect: '4/3',
+    poster: 'https://files.catbox.moe/b0rer1.png',
+    videoSrc: 'https://files.catbox.moe/1xunl2.mp4',
+    imgBefore: 'YOUR_BEFORE_IMAGE_URL.jpg',
+    imgAfter: 'YOUR_AFTER_IMAGE_URL.jpg'
+},
+      
 'timeline-breakdown': {
             title: 'Timeline Breakdown',
             category: 'Timeline Breakdown / ChatGPT Animate',
