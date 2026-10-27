@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     brief: 'Constructed a grounded, high-retention 97% AI commercial for Aura & Arc Coffee. The strategy treated AI-generated clips as raw footage—focusing on character consistency, matching environmental lighting, realistic pacing, and emotional story arcs.',
     development: 'Executed frame-accurate cuts to build early morning friction, paired with precise sound design so every key beat hits at the exact millisecond. Integrated custom UI overlays, sound-effects transitions, and dynamic branding assets directly inside the CapCut timeline.',
     aspect: '4/3',
-    poster: 'https://files.catbox.moe/34bwzk.png',
+    poster: 'https://files.catbox.moe/bgkkgu.png',
     videoSrc: 'https://files.catbox.moe/1xunl2.mp4',
     imgBefore: 'YOUR_BEFORE_IMAGE_URL.jpg',
     imgAfter: 'YOUR_AFTER_IMAGE_URL.jpg'
