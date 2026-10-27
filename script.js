@@ -58,19 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imgBefore: 'https://files.catbox.moe/qvhv9w.png',
             imgAfter: 'https://files.catbox.moe/qvhv9w.png'
         },
-'ai-avatar': {
-    title: 'AI Talking Head Breakdown',
-    category: 'AI Avatar Reel / CapCut Breakdown',
-    year: '2026',
-    tools: 'CapCut, AI Avatar, ElevenLabs, ChatGPT',
-    brief: 'Created a high-converting, scroll-stopping talking head AI avatar reel using CapCut and GenAI tools. Designed to showcase realistic facial animation, natural voice synchronization, and fast-paced breakdown cuts.',
-    development: 'Leveraged photorealistic AI avatar generation paired with voice synthesis. Executed frame-accurate cuts, kinetic typography, dynamic background transitions, and custom graphic overlays inside CapCut for maximum viewer engagement.',
-    aspect: '9/16',
-    poster: 'https://files.catbox.moe/a9yf8f.png',
-    videoSrc: 'https://www.dropbox.com/scl/fi/l1t2rr6b6dff26in43g8q/AI_Avatar_Reel.mp4?rlkey=1745ymapqkyw8ij9wnptjmlve&st=qdqhwbyz&dl=1',
-    imgBefore: 'https://www.dropbox.com/scl/fi/pr72njoubruwxv2qicuvt/Before-cover-112.png?rlkey=ws5izq1baiphf5ztpwqexrodj&st=zbf7w239&dl=1',
-    imgAfter: 'https://www.dropbox.com/scl/fi/r7yx7e8tq415qajp6y8d7/After-cover-112.png?rlkey=w7zoke4vrxkleey5rawxik2zj&st=c7w97r1d&dl=1'
-  },
+
 
    'timeline-breakdown': {
     title: 'Aura & Arc Coffee — AI Commercial',
